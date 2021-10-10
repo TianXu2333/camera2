@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">openglCamera</string>
+    <string name="preview_size">分辨率</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33000000">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="30dp"
+                style="@style/preview_size_text_style"
+                android:text="@string/preview_size"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/preview_size_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="120dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/cancel_button"
+            android:src="@drawable/cancel"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </FrameLayout>
+</ScrollView>
